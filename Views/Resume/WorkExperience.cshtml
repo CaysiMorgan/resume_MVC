@@ -1,0 +1,39 @@
+﻿
+@model 
+@{
+    ViewBag.Title = "Work Experience";
+}
+<h2>StudentForm</h2>
+<div>
+    <fieldset>
+        <legend>Personal Information</legend>
+        @using (Html.BeginForm())
+        {
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Company)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Company)
+                    @Html.ValidationMessageFor(p => p.Company)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Title)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Title)
+                    @Html.ValidationMessageFor(p => p.Title)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Country)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.country)
+                    @Html.ValidationMessageFor(p => p.Country)
+                </div>
+            </div>
+        }

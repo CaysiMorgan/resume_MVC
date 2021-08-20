@@ -1,0 +1,88 @@
+﻿@model 
+@{
+    ViewBag.Title = "Personal information";
+}
+<h2>Resume Maker</h2> 
+<div> 
+    <fieldset>
+        <legend>Personal Information</legend>
+        @using (Html.BeginForm())
+        {
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.PersonVM)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.FirstName)
+                    @Html.ValidationMessageFor(p => p.FirstName)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.LastName)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.LastName)
+                    @Html.ValidationMessageFor(p => p.LastName)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Nationaility)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Nationaily)
+                    @Html.ValidationMessageFor(p => p.Nationality)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.EducationalLevel)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.EducationalLevel)
+                    @Html.ValidationMessageFor(p => p.EducationalLevel)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Address)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Address)
+                    @Html.ValidationMessageFor(p => p.Address)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.TeleNum)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.TeleNum)
+                    @Html.ValidationMessageFor(p => p.TeleNum)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Email)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Email)
+                    @Html.ValidationMessageFor(p => p.Email)
+                </div>
+            </div>
+            <div>
+                <div class="editor-label ">
+                    @Html.LabelFor(p => p.Summary)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(p => p.Summary)
+                    @Html.ValidationMessageFor(p => p.Summary)
+                </div>
+            </div>
+
+               
+            <p><input type="submit" value="Submit Details" /></p>
+        }
+    </fieldset>
+</div>   

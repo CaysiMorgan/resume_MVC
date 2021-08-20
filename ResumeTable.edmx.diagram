@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2ecf5a15bb89491d8db079fbaaa23f0a" Name="Diagram1">
+        <EntityTypeShape EntityType="ResumeModel.Certification" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ResumeModel.Education" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ResumeModel.Person" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ResumeModel.Skill" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ResumeModel.WorkExperience" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="ResumeModel.FK__Certifica__IDPer__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="ResumeModel.FK__Education__IDPer__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="ResumeModel.FK__Skills__IDPers__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="ResumeModel.FK__WorkExper__IDPer__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
