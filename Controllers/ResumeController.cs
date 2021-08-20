@@ -11,8 +11,8 @@ namespace resume_MVC.Controllers
 {
     public class ResumeController : Controller
     {
-        
-        [HttpGet]  
+
+        [HttpGet]
     public ActionResult PersonnalInformtion(PersonVM person)  
         {  
      return View();  
